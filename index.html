@@ -7,23 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="profile-card">
-            <img src="Felix.jpg" alt="Profile Picture" data-testid="profilePicture" class="profile-picture">
-
-        <h1 data-testid="fullName">Felix Esezobor</h1>
-        <p data-testid="jobTitle">Frontend Developer</p>
-        <p data-testid="shortBio" class="shortBio">I am a tech enthusiast, passionate about building responsive and scalable web infrastructures</p>
-        <p data-testid="currentLocation">FCT, Abuja</p>
-                <a href="" data-testid="emailAddress">princeesez@gmail.com</a>
-<ul data-testid="socialLinks">
-    <li><a href="https://www.linkedin.com/in/esezobor-felix-1970a713a/">LinkedIn</a>
-        <li><a href="https://github.com/Princeesez">Github</a>
-                <li><a href="https://x.com/princeesez">Twitter</a>
-    </li>
-</ul>
-<p data-testid="currentTimeUTC" id="currentTimeUTC"></p>
+    
+    <div class="profile-card" data-testid="profileCard">
+    <img src="Felix.jpg" alt="Profile Picture" data-testid="profilePicture" class="profile-picture">
+    <h1 data-testid="fullName">Felix Esezobor</h1>
+    <h2 data-testid="jobTitle">Frontend Developer</h2>
+    <p data-testid="shortBio">I am a tech enthusiast, passionate about building responsive and scalable web infrastructures.</p>
+    <p data-testid="currentLocation">FCT, Abuja</p>
+    <p data-testid="emailAddress"><a href="mailto:princeesez@gmail.com">princeesez@gmail.com</a></p>
+    <div data-testid="socialLinks">
+        <a href="https://www.linkedin.com/in/esezobor-felix-1970a713a/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/princeesez" target="_blank">GitHub</a>
+        <a href="https://twitter.com/princeesez" target="_blank">Twitter</a>
     </div>
-
+    <p data-testid="currentTimeUTC" id="currentTimeUTC"></p>
+</div>
 
     <script src="script.js"></script>
 

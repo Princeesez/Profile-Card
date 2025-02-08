@@ -1,7 +1,10 @@
-const currentTimeUTCElement = document.getElementById("currentTimeUTC");
-function updateCurrentTimeUTC() {const currentTime = newDate().toUTCString();
-    currentTimeUTCElement.innerText = 'current Time (UTC): $ {currentTime}';
-}
+document.addEventListener('DOMContentLoaded', (event) => {
+    function updateTime() {
+        const currentTimeUTC = new Date().toUTCString();
+        document.getElementById('currentTimeUTC').textContent = `Current Time: ${currentTimeUTC}`;
+    }
 
-updateCurrentTimeUTC();
-setInterval(updateCurrentTimeUTC, 1000)
+    // Update time every second
+    setInterval(updateTime, 1000);
+    updateTime(); // Initial call to avoid one-second delay
+});
